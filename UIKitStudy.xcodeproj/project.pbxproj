@@ -7,23 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D04129F624E316350034B4BE /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04129F524E316350034B4BE /* FourthViewController.swift */; };
+		D046FAA924E423A1000B74C4 /* FifthSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D046FAA824E423A1000B74C4 /* FifthSB.storyboard */; };
+		D046FAAB24E435C6000B74C4 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046FAAA24E435C6000B74C4 /* FifthViewController.swift */; };
+		D0916B3724E0DF2300D08B57 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0916B3624E0DF2300D08B57 /* SecondViewController.swift */; };
+		D0C27D9524E2D4F600A6FF77 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C27D9424E2D4F600A6FF77 /* ThirdViewController.swift */; };
+		D0C27D9724E2D69800A6FF77 /* CustomPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C27D9624E2D69800A6FF77 /* CustomPageViewController.swift */; };
+		D0C27D9B24E2D87C00A6FF77 /* DataPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C27D9A24E2D87C00A6FF77 /* DataPageViewController.swift */; };
+		D0C27D9D24E2F2F300A6FF77 /* FourthSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C27D9C24E2F2F300A6FF77 /* FourthSB.storyboard */; };
+		D0C2824424E08559005F277D /* SecondSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C2824324E08559005F277D /* SecondSB.storyboard */; };
+		D0C2824624E0856C005F277D /* ThirdSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C2824524E0856C005F277D /* ThirdSB.storyboard */; };
+		D0C2824A24E08D96005F277D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C2824924E08D96005F277D /* FirstViewController.swift */; };
 		D0C29B8D24E07CBA00E8B1F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C29B8C24E07CBA00E8B1F0 /* AppDelegate.swift */; };
 		D0C29B8F24E07CBA00E8B1F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C29B8E24E07CBA00E8B1F0 /* SceneDelegate.swift */; };
-		D0C29B9124E07CBA00E8B1F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0C29B9024E07CBA00E8B1F0 /* ViewController.swift */; };
 		D0C29B9424E07CBA00E8B1F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C29B9224E07CBA00E8B1F0 /* Main.storyboard */; };
 		D0C29B9624E07CBB00E8B1F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0C29B9524E07CBB00E8B1F0 /* Assets.xcassets */; };
 		D0C29B9924E07CBB00E8B1F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C29B9724E07CBB00E8B1F0 /* LaunchScreen.storyboard */; };
+		D0C29BA124E0829600E8B1F0 /* FirstSB.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0C29BA024E0829600E8B1F0 /* FirstSB.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D04129F524E316350034B4BE /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		D046FAA824E423A1000B74C4 /* FifthSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FifthSB.storyboard; sourceTree = "<group>"; };
+		D046FAAA24E435C6000B74C4 /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
+		D0916B3624E0DF2300D08B57 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		D0C27D9424E2D4F600A6FF77 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		D0C27D9624E2D69800A6FF77 /* CustomPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageViewController.swift; sourceTree = "<group>"; };
+		D0C27D9A24E2D87C00A6FF77 /* DataPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPageViewController.swift; sourceTree = "<group>"; };
+		D0C27D9C24E2F2F300A6FF77 /* FourthSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FourthSB.storyboard; sourceTree = "<group>"; };
+		D0C2824324E08559005F277D /* SecondSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondSB.storyboard; sourceTree = "<group>"; };
+		D0C2824524E0856C005F277D /* ThirdSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThirdSB.storyboard; sourceTree = "<group>"; };
+		D0C2824924E08D96005F277D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		D0C29B8924E07CBA00E8B1F0 /* UIKitStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0C29B8C24E07CBA00E8B1F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0C29B8E24E07CBA00E8B1F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D0C29B9024E07CBA00E8B1F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D0C29B9324E07CBA00E8B1F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0C29B9524E07CBB00E8B1F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0C29B9824E07CBB00E8B1F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0C29B9A24E07CBB00E8B1F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0C29BA024E0829600E8B1F0 /* FirstSB.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FirstSB.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +78,34 @@
 		D0C29B8B24E07CBA00E8B1F0 /* UIKitStudy */ = {
 			isa = PBXGroup;
 			children = (
+				D0C29BA224E082AB00E8B1F0 /* Storyboards */,
 				D0C29B8C24E07CBA00E8B1F0 /* AppDelegate.swift */,
 				D0C29B8E24E07CBA00E8B1F0 /* SceneDelegate.swift */,
-				D0C29B9024E07CBA00E8B1F0 /* ViewController.swift */,
-				D0C29B9224E07CBA00E8B1F0 /* Main.storyboard */,
 				D0C29B9524E07CBB00E8B1F0 /* Assets.xcassets */,
-				D0C29B9724E07CBB00E8B1F0 /* LaunchScreen.storyboard */,
 				D0C29B9A24E07CBB00E8B1F0 /* Info.plist */,
+				D0C2824924E08D96005F277D /* FirstViewController.swift */,
+				D0916B3624E0DF2300D08B57 /* SecondViewController.swift */,
+				D0C27D9424E2D4F600A6FF77 /* ThirdViewController.swift */,
+				D04129F524E316350034B4BE /* FourthViewController.swift */,
+				D046FAAA24E435C6000B74C4 /* FifthViewController.swift */,
+				D0C27D9624E2D69800A6FF77 /* CustomPageViewController.swift */,
+				D0C27D9A24E2D87C00A6FF77 /* DataPageViewController.swift */,
 			);
 			path = UIKitStudy;
+			sourceTree = "<group>";
+		};
+		D0C29BA224E082AB00E8B1F0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D0C29B9224E07CBA00E8B1F0 /* Main.storyboard */,
+				D0C29BA024E0829600E8B1F0 /* FirstSB.storyboard */,
+				D0C2824324E08559005F277D /* SecondSB.storyboard */,
+				D0C2824524E0856C005F277D /* ThirdSB.storyboard */,
+				D0C27D9C24E2F2F300A6FF77 /* FourthSB.storyboard */,
+				D046FAA824E423A1000B74C4 /* FifthSB.storyboard */,
+				D0C29B9724E07CBB00E8B1F0 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +166,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0C2824424E08559005F277D /* SecondSB.storyboard in Resources */,
 				D0C29B9924E07CBB00E8B1F0 /* LaunchScreen.storyboard in Resources */,
 				D0C29B9624E07CBB00E8B1F0 /* Assets.xcassets in Resources */,
+				D0C29BA124E0829600E8B1F0 /* FirstSB.storyboard in Resources */,
 				D0C29B9424E07CBA00E8B1F0 /* Main.storyboard in Resources */,
+				D0C27D9D24E2F2F300A6FF77 /* FourthSB.storyboard in Resources */,
+				D0C2824624E0856C005F277D /* ThirdSB.storyboard in Resources */,
+				D046FAA924E423A1000B74C4 /* FifthSB.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +184,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0C29B9124E07CBA00E8B1F0 /* ViewController.swift in Sources */,
+				D046FAAB24E435C6000B74C4 /* FifthViewController.swift in Sources */,
+				D0916B3724E0DF2300D08B57 /* SecondViewController.swift in Sources */,
+				D0C2824A24E08D96005F277D /* FirstViewController.swift in Sources */,
+				D0C27D9724E2D69800A6FF77 /* CustomPageViewController.swift in Sources */,
+				D0C27D9524E2D4F600A6FF77 /* ThirdViewController.swift in Sources */,
+				D04129F624E316350034B4BE /* FourthViewController.swift in Sources */,
 				D0C29B8D24E07CBA00E8B1F0 /* AppDelegate.swift in Sources */,
 				D0C29B8F24E07CBA00E8B1F0 /* SceneDelegate.swift in Sources */,
+				D0C27D9B24E2D87C00A6FF77 /* DataPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +337,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ASRK7R7UY8;
 				INFOPLIST_FILE = UIKitStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +355,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ASRK7R7UY8;
 				INFOPLIST_FILE = UIKitStudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

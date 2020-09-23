@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cXY-HU-Coe">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fourth View Controller-->
+        <scene sceneID="TRl-qi-VSM">
+            <objects>
+                <viewController id="cXY-HU-Coe" customClass="FourthViewController" customModule="UIKitStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wdn-s0-Iuv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dh2-Ky-wyL">
+                                <rect key="frame" x="20" y="97" width="374" height="32"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="Third"/>
+                                    <segment title="Fourth"/>
+                                </segments>
+                                <connections>
+                                    <action selector="whenChange:" destination="cXY-HU-Coe" eventType="valueChanged" id="mgC-ta-4l5"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z2I-er-oh0">
+                                <rect key="frame" x="20" y="136" width="374" height="534"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Segment and Touches" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGZ-fg-5Vo">
+                                <rect key="frame" x="0.0" y="719" width="414" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="irG-GX-8SD" firstAttribute="trailing" secondItem="CGZ-fg-5Vo" secondAttribute="trailing" id="4v9-0v-mTf"/>
+                            <constraint firstItem="dh2-Ky-wyL" firstAttribute="top" secondItem="irG-GX-8SD" secondAttribute="top" constant="53" id="8f8-3x-29d"/>
+                            <constraint firstItem="CGZ-fg-5Vo" firstAttribute="leading" secondItem="irG-GX-8SD" secondAttribute="leading" id="ATE-2v-kHf"/>
+                            <constraint firstItem="z2I-er-oh0" firstAttribute="leading" secondItem="irG-GX-8SD" secondAttribute="leading" constant="20" id="BHC-jf-vaC"/>
+                            <constraint firstItem="irG-GX-8SD" firstAttribute="trailing" secondItem="z2I-er-oh0" secondAttribute="trailing" constant="20" id="Mff-VX-Bqj"/>
+                            <constraint firstItem="irG-GX-8SD" firstAttribute="trailing" secondItem="dh2-Ky-wyL" secondAttribute="trailing" constant="20" id="eWe-CI-3Vd"/>
+                            <constraint firstItem="dh2-Ky-wyL" firstAttribute="leading" secondItem="irG-GX-8SD" secondAttribute="leading" constant="20" id="hiD-VC-FFr"/>
+                            <constraint firstItem="z2I-er-oh0" firstAttribute="top" secondItem="dh2-Ky-wyL" secondAttribute="bottom" constant="8" id="mf8-ED-gxW"/>
+                            <constraint firstItem="CGZ-fg-5Vo" firstAttribute="top" secondItem="z2I-er-oh0" secondAttribute="bottom" constant="49" id="sEL-Qr-aRR"/>
+                            <constraint firstItem="irG-GX-8SD" firstAttribute="bottom" secondItem="CGZ-fg-5Vo" secondAttribute="bottom" constant="64" id="vBy-sW-Bys"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="irG-GX-8SD"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="ceD-Mz-p6c"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="labelCobaia" destination="CGZ-fg-5Vo" id="ySp-XN-NtT"/>
+                        <outlet property="viewCobaia" destination="z2I-er-oh0" id="UxC-Sn-c3i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uYO-s0-sct" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-210.1449275362319" y="4.6875"/>
+        </scene>
+    </scenes>
+</document>

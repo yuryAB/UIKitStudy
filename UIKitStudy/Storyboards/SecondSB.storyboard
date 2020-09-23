@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cEX-gw-bg4">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Second View Controller-->
+        <scene sceneID="Jf8-Cv-goN">
+            <objects>
+                <viewController id="cEX-gw-bg4" customClass="SecondViewController" customModule="UIKitStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kUY-ql-ygN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1v5-A1-UKV">
+                                <rect key="frame" x="50" y="148" width="314" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="fGE-T1-ETU">
+                                <rect key="frame" x="160" y="200" width="94" height="32"/>
+                                <connections>
+                                    <action selector="stepperAction:" destination="cEX-gw-bg4" eventType="valueChanged" id="zId-ch-Hm2"/>
+                                </connections>
+                            </stepper>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5W8-LU-VDK">
+                                <rect key="frame" x="184" y="340" width="51" height="31"/>
+                                <connections>
+                                    <action selector="switchAction:" destination="cEX-gw-bg4" eventType="valueChanged" id="WZA-0y-W3I"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5E-OI-jbY">
+                                <rect key="frame" x="50" y="271" width="314" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XV9-6L-UQL" firstAttribute="trailing" secondItem="A5E-OI-jbY" secondAttribute="trailing" constant="50" id="6iW-pE-MEs"/>
+                            <constraint firstItem="fGE-T1-ETU" firstAttribute="top" secondItem="1v5-A1-UKV" secondAttribute="bottom" constant="16" id="BR0-UQ-HAq"/>
+                            <constraint firstItem="XV9-6L-UQL" firstAttribute="trailing" secondItem="5W8-LU-VDK" secondAttribute="trailing" constant="181" id="CLl-oB-99x"/>
+                            <constraint firstItem="A5E-OI-jbY" firstAttribute="leading" secondItem="XV9-6L-UQL" secondAttribute="leading" constant="50" id="FdZ-JX-EsR"/>
+                            <constraint firstItem="XV9-6L-UQL" firstAttribute="trailing" secondItem="fGE-T1-ETU" secondAttribute="trailing" constant="160" id="HoM-BV-fIq"/>
+                            <constraint firstItem="1v5-A1-UKV" firstAttribute="leading" secondItem="XV9-6L-UQL" secondAttribute="leading" constant="50" id="Ize-Be-70c"/>
+                            <constraint firstItem="5W8-LU-VDK" firstAttribute="top" secondItem="A5E-OI-jbY" secondAttribute="bottom" constant="33" id="Olu-a0-nHc"/>
+                            <constraint firstItem="5W8-LU-VDK" firstAttribute="leading" secondItem="XV9-6L-UQL" secondAttribute="leading" constant="184" id="Op9-NZ-Ew6"/>
+                            <constraint firstItem="XV9-6L-UQL" firstAttribute="trailing" secondItem="1v5-A1-UKV" secondAttribute="trailing" constant="50" id="SUV-cY-ggR"/>
+                            <constraint firstItem="1v5-A1-UKV" firstAttribute="top" secondItem="XV9-6L-UQL" secondAttribute="top" constant="104" id="Uqd-Ia-UHZ"/>
+                            <constraint firstItem="fGE-T1-ETU" firstAttribute="leading" secondItem="XV9-6L-UQL" secondAttribute="leading" constant="160" id="q9c-lx-5Fo"/>
+                            <constraint firstItem="A5E-OI-jbY" firstAttribute="top" secondItem="fGE-T1-ETU" secondAttribute="bottom" constant="39" id="vEl-nu-SsQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="XV9-6L-UQL"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="mostRecent" id="D5b-BR-DwK"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="numberText" destination="1v5-A1-UKV" id="5Wp-Ju-vCI"/>
+                        <outlet property="numberText2" destination="A5E-OI-jbY" id="nMz-83-QHM"/>
+                        <outlet property="stepperObj" destination="fGE-T1-ETU" id="Afa-tS-Tqn"/>
+                        <outlet property="switchIObj" destination="5W8-LU-VDK" id="oxb-nZ-4tB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AUJ-Q5-NyW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="250.72463768115944" y="-200.22321428571428"/>
+        </scene>
+    </scenes>
+</document>

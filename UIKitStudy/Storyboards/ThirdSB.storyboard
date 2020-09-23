@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SuJ-pG-86F">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Third View Controller-->
+        <scene sceneID="eTy-Rg-kMT">
+            <objects>
+                <viewController id="SuJ-pG-86F" customClass="ThirdViewController" customModule="UIKitStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tEc-gQ-sec">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ddz-SH-eyH">
+                                <rect key="frame" x="37" y="310" width="340" height="276"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="yiw-lc-Aot">
+                                <rect key="frame" x="0.0" y="625" width="414" height="37"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ddz-SH-eyH" firstAttribute="top" secondItem="R1r-LH-2F0" secondAttribute="top" constant="266" id="9HN-wP-ncv"/>
+                            <constraint firstItem="R1r-LH-2F0" firstAttribute="trailing" secondItem="ddz-SH-eyH" secondAttribute="trailing" constant="37" id="KVK-GN-vW1"/>
+                            <constraint firstItem="R1r-LH-2F0" firstAttribute="trailing" secondItem="yiw-lc-Aot" secondAttribute="trailing" id="M8H-OQ-mbz"/>
+                            <constraint firstItem="ddz-SH-eyH" firstAttribute="leading" secondItem="R1r-LH-2F0" secondAttribute="leading" constant="37" id="RmL-Gp-VQG"/>
+                            <constraint firstItem="R1r-LH-2F0" firstAttribute="bottom" secondItem="yiw-lc-Aot" secondAttribute="bottom" constant="151" id="ecj-uN-gEv"/>
+                            <constraint firstItem="yiw-lc-Aot" firstAttribute="top" secondItem="ddz-SH-eyH" secondAttribute="bottom" constant="39" id="lFa-WO-ebx"/>
+                            <constraint firstItem="yiw-lc-Aot" firstAttribute="leading" secondItem="R1r-LH-2F0" secondAttribute="leading" id="uGm-TC-zI6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="R1r-LH-2F0"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="h3H-KS-9Zt"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="contentView" destination="ddz-SH-eyH" id="g2h-BX-71R"/>
+                        <outlet property="pageControl" destination="yiw-lc-Aot" id="mDT-2B-0Di"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qqm-3M-cqI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.579710144927539" y="109.82142857142857"/>
+        </scene>
+        <!--Data Page View Controller-->
+        <scene sceneID="qV6-cV-s9h">
+            <objects>
+                <viewController storyboardIdentifier="DataPageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="04G-Oh-hpC" customClass="DataPageViewController" customModule="UIKitStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2hg-LS-sAE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znz-e0-svp">
+                                <rect key="frame" x="0.0" y="144" width="414" height="618"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="znz-e0-svp" firstAttribute="top" secondItem="5c1-fX-pxT" secondAttribute="top" constant="100" id="IcH-46-2JX"/>
+                            <constraint firstItem="5c1-fX-pxT" firstAttribute="trailing" secondItem="znz-e0-svp" secondAttribute="trailing" id="Q3p-qv-dS7"/>
+                            <constraint firstItem="znz-e0-svp" firstAttribute="leading" secondItem="5c1-fX-pxT" secondAttribute="leading" id="VZq-Ww-iER"/>
+                            <constraint firstItem="5c1-fX-pxT" firstAttribute="bottom" secondItem="znz-e0-svp" secondAttribute="bottom" constant="100" id="l2B-Jf-5am"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5c1-fX-pxT"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelContent" destination="znz-e0-svp" id="XyY-4X-w4U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ut1-GR-Egn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2106" y="110"/>
+        </scene>
+        <!--Custom Page View Controller-->
+        <scene sceneID="VKN-iP-Oad">
+            <objects>
+                <pageViewController storyboardIdentifier="CustomPageViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="Lj4-vw-GvW" customClass="CustomPageViewController" customModule="UIKitStudy" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TzX-ah-OvC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2793" y="110"/>
+        </scene>
+    </scenes>
+</document>

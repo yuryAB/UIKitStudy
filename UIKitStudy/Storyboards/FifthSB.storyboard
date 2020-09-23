@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="94W-mw-CPM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fifth View Controller-->
+        <scene sceneID="NIb-xB-CF4">
+            <objects>
+                <viewController id="94W-mw-CPM" customClass="FifthViewController" customModule="UIKitStudy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Xg-lT-vso">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cpo-Ed-lFq">
+                                <rect key="frame" x="20" y="44" width="374" height="490"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="490" id="VHg-bW-EaH"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obZ-Kf-T2H">
+                                <rect key="frame" x="0.0" y="580" width="414" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="Select Image">
+                                    <color key="titleColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="selectImageButtonAction:" destination="94W-mw-CPM" eventType="touchUpInside" id="5uI-nn-fZG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ob-Pn-PX6">
+                                <rect key="frame" x="0.0" y="647" width="414" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Remove"/>
+                                <connections>
+                                    <action selector="removeImageButtonAction:" destination="94W-mw-CPM" eventType="touchUpInside" id="o1q-mk-2of"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="obZ-Kf-T2H" firstAttribute="top" secondItem="cpo-Ed-lFq" secondAttribute="bottom" constant="46" id="1vw-Iw-W8j"/>
+                            <constraint firstItem="cpo-Ed-lFq" firstAttribute="top" secondItem="wca-nO-Fyi" secondAttribute="top" id="7NT-wt-dHX"/>
+                            <constraint firstItem="cpo-Ed-lFq" firstAttribute="leading" secondItem="wca-nO-Fyi" secondAttribute="leading" constant="20" id="A6X-6R-UAv"/>
+                            <constraint firstItem="5ob-Pn-PX6" firstAttribute="leading" secondItem="wca-nO-Fyi" secondAttribute="leading" id="B5h-1P-s5v"/>
+                            <constraint firstItem="obZ-Kf-T2H" firstAttribute="leading" secondItem="wca-nO-Fyi" secondAttribute="leading" id="IPZ-hT-aj7"/>
+                            <constraint firstItem="wca-nO-Fyi" firstAttribute="trailing" secondItem="obZ-Kf-T2H" secondAttribute="trailing" id="VUT-Ju-Gsj"/>
+                            <constraint firstItem="5ob-Pn-PX6" firstAttribute="top" secondItem="obZ-Kf-T2H" secondAttribute="bottom" constant="25" id="Z3f-uR-tjF"/>
+                            <constraint firstItem="wca-nO-Fyi" firstAttribute="trailing" secondItem="cpo-Ed-lFq" secondAttribute="trailing" constant="20" id="c6S-zy-00C"/>
+                            <constraint firstItem="wca-nO-Fyi" firstAttribute="trailing" secondItem="5ob-Pn-PX6" secondAttribute="trailing" id="sM7-3T-hPJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wca-nO-Fyi"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="topRated" id="yzL-xq-Fbo">
+                        <color key="badgeColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="removeImageButton" destination="5ob-Pn-PX6" id="ESG-KN-C7K"/>
+                        <outlet property="selectImageButton" destination="obZ-Kf-T2H" id="3bJ-Kk-vPx"/>
+                        <outlet property="selectedImageContainer" destination="9Xg-lT-vso" id="mKd-LF-6qi"/>
+                        <outlet property="selectedImageView" destination="cpo-Ed-lFq" id="5mi-gg-A0l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kWB-nT-rRf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-339.13043478260875" y="15.401785714285714"/>
+        </scene>
+    </scenes>
+</document>
